@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "seo-app"
+client_id = "0ee5b9e34a2845d613d3d56db808d9a7"
+application_url = "https://statement-catherine-reproduce-concept.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://statement-catherine-reproduce-concept.trycloudflare.com/auth/callback",
+  "https://statement-catherine-reproduce-concept.trycloudflare.com/auth/shopify/callback",
+  "https://statement-catherine-reproduce-concept.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "seo-app-testing.myshopify.com"
